@@ -1,4 +1,6 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss/types/config';
+
+// type TailwindConfig = RequiredConfig & Partial<OptionalConfig>;
 
 const config: Config = {
   content: [
