@@ -1,13 +1,10 @@
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 
-interface TemplateProps {
-  a: ReactNode;
-}
 
-export const Template: FC<TemplateProps> = ({ a }) => {
+export const Template: FC = () => {
   return (
     <div className="w-full">
-      {a}
+      Template
     </div>
   );
 }
