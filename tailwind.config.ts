@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss/types/config';
-import  { Config } from 'tailwindcss';
+import { Config } from 'tailwindcss';
 
 // type TailwindConfig = RequiredConfig & Partial<OptionalConfig>;
 
@@ -13,6 +13,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        textSecondary: "var(--textSecondary)",
         neutral: "var(--neutral)",
         subtle: "var(--subtle)",
         background: "var(--background)",
