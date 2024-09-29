@@ -9,10 +9,13 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/uiKit/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/modules/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
+        hover: "var(--hover)",
+        textDark: "var(--textDark)",
         textSecondary: "var(--textSecondary)",
         neutral: "var(--neutral)",
         subtle: "var(--subtle)",
@@ -20,7 +23,8 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       spacing: {
-        '2.25': '0.5625rem', // Пример: добавляем 2.25 (0.5625rem)
+        '2.25': '0.5625rem', // 2.25 * 0.25rem = 0.5625rem
+        '2.75': '0.6875rem', // 2.75 * 0.25rem = 0.6875rem
       }
     },
   },
