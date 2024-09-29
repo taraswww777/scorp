@@ -5,9 +5,13 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --textColor: #000000;
   --neutral: #C1F101;
   --subtle: #ffffff;
+
+  --hover: #F5F5F5;
+
+  --textColor: #000000;
+  --textDark: #222222;
   --textSecondary: #757575;
 }
 
