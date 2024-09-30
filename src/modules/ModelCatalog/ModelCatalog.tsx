@@ -9,6 +9,7 @@ import { ROUTES } from 'src/constants/routes';
 
 
 export const ModelCatalog: FC = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [listModels, setListModels] = useState<CatalogModelItemDTO[]>(Array.from(mockListModels.values()));
 
   return (
