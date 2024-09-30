@@ -1,13 +1,12 @@
 import { PageTemplate, Header, Footer } from 'src/components/PageTemplate';
-import { ModelCatalog } from 'src/modules';
 
-export default function HomePade() {
+export default function ModelPage() {
   return (
     <PageTemplate
       header={<Header />}
       footer={<Footer />}
     >
-      <ModelCatalog />
+      Страница списка моделей
     </PageTemplate>
   );
 }
