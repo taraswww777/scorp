@@ -11,9 +11,9 @@ export const ModelCatalog: FC = () => {
 
   return (
     <div className="w-full">
-      <ul className="flex flex-wrap gap-x-4 gap-y-8">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4   gap-x-4 gap-y-8">
         {listModels.map((modelItem) => (
-          <li key={modelItem.uuid} className="w-1/5 flex-auto">
+          <li key={modelItem.uuid} className="">
             <Image src={modelItem.previewImgUrl} alt={modelItem.name} width={360} height={256} />
             <div className="text-textDark text-xl">{modelItem.name}</div>
             <div className="text-textSecondary">{modelItem.author.nikName}</div>
