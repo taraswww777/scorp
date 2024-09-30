@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss/types/config';
-import { Config } from 'tailwindcss';
 
 // type TailwindConfig = RequiredConfig & Partial<OptionalConfig>;
 

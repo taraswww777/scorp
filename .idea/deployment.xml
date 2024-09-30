@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" serverName="scorp.taraswww777.dev" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="ftp.u1384230.cp.regruhosting.ru">
         <serverdata>
@@ -10,6 +10,13 @@
         </serverdata>
       </paths>
       <paths name="rs">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="scorp.taraswww777.dev">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />

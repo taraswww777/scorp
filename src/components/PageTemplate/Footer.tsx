@@ -2,7 +2,6 @@ import React, { FC } from 'react';
 import { FullLogo } from 'src/components/FullLogo';
 import Link from 'next/link';
 import { ROUTES } from 'src/constants/routes';
-import { VARIANT } from 'src/uiKit/constants/VARIANT';
 
 export const Footer: FC = () => {
   return (
@@ -20,7 +19,6 @@ export const Footer: FC = () => {
       <div className="">
         <Link
           className="text-[18px] flex flex-nowrap gap-2 font-medium text-black"
-          variant={VARIANT.subtle}
           href={'mailto:help@help.ru'}
         >
           <img src="/assets/icons/mail.svg" alt="Поддержка" className="w-5" />
