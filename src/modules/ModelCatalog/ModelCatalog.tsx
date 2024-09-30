@@ -11,7 +11,6 @@ export const ModelCatalog: FC = () => {
 
   return (
     <div className="w-full">
-      Template
       <ul className="flex flex-wrap gap-x-4 gap-y-8">
         {listModels.map((modelItem) => (
           <li key={modelItem.uuid} className="w-1/5 flex-auto">
