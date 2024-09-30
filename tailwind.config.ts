@@ -13,6 +13,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '480px',
+        // => @media (min-width: 480px) { ... },
+        '2xl': '1440px',
+        // => @media (min-width: 1440px) { ... }
+      },
       colors: {
         hover: "var(--hover)",
         textDark: "var(--textDark)",
