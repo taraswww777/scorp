@@ -3,6 +3,12 @@ import { PageTemplate, Header, Footer } from 'src/components/PageTemplate';
 // import { WithModelUuid } from 'src/constants/routes';
 // import { mockListModels } from 'src/__mock__';
 import { genCatalogModelItem } from 'src/__mock__/generators/genCatalogModelItem';
+import type { Metadata } from 'next';
+import { titleWithSiteName } from 'src/utils/titleWithSiteName';
+
+export const metadata: Metadata = {
+  title: titleWithSiteName('Детальная страница модели'),
+};
 
 // interface DetailModelPageProps {
 //   params: WithModelUuid
