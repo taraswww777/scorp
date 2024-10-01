@@ -9,4 +9,5 @@ export interface CatalogModelItemDTO {
     nikName: string
   },
   comments: string[],
+  images: Array<{ fullImage: string, preview: string }>
 }

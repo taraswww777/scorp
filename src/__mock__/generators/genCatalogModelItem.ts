@@ -15,5 +15,31 @@ export const genCatalogModelItem = (): CatalogModelItemDTO => {
     ]),
     likes: faker.number.int({ min: 0 }),
     name: faker.lorem.sentence({ max: 10, min: 1 }),
+    images: [
+      {
+        fullImage: '/assets/mockImages/bigSlider/bigImage.png',
+        preview: '/assets/mockImages/bigSlider/previews/image-0.png'
+      },
+      {
+        fullImage: '/assets/mockImages/bigSlider/bigImage.png',
+        preview: '/assets/mockImages/bigSlider/previews/image-1.png'
+      },
+      {
+        fullImage: '/assets/mockImages/bigSlider/bigImage.png',
+        preview: '/assets/mockImages/bigSlider/previews/image-2.png'
+      },
+      {
+        fullImage: '/assets/mockImages/bigSlider/bigImage.png',
+        preview: '/assets/mockImages/bigSlider/previews/image-3.png'
+      },
+      {
+        fullImage: '/assets/mockImages/bigSlider/bigImage.png',
+        preview: '/assets/mockImages/bigSlider/previews/image-4.png'
+      },
+      {
+        fullImage: '/assets/mockImages/bigSlider/bigImage.png',
+        preview: '/assets/mockImages/bigSlider/previews/image-5.png'
+      },
+    ]
   }
 }
