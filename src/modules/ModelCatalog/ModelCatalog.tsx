@@ -3,7 +3,7 @@ import { FC, useState } from 'react';
 import { mockListModels } from 'src/__mock__';
 import { CatalogModelItemDTO } from 'src/types/dto/CatalogModelItemDTO';
 import Image from 'next/image';
-import { Tag } from 'src/uiKit';
+import { TagComments, TagLikes } from 'src/uiKit';
 import Link from 'next/link';
 import { ROUTES } from 'src/constants/routes';
 import { UserInline } from 'src/components/UserInline';
@@ -24,15 +24,12 @@ export const ModelCatalog: FC = () => {
             </Link>
             <UserInline author={modelItem.author} />
             <div className="flex gap-2 mt-1">
-              <Tag>
-                <img src="/assets/icons/comments.svg" alt="comments" className="w-5" />
+              <TagComments>
                 {modelItem.comments.length}
-              </Tag>
-
-              <Tag>
-                <img src="/assets/icons/likes.svg" alt="likes" className="w-5" />
+              </TagComments>
+              <TagLikes>
                 {modelItem.likes}
-              </Tag>
+              </TagLikes>
             </div>
           </li>
         ))}
