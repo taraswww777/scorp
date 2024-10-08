@@ -1,5 +1,6 @@
 "use client"
 import { FC, useState } from 'react';
+import { Button } from 'src/uiKit';
 
 interface ImageGalleryProps {
   images: Array<{
@@ -34,12 +35,12 @@ export const ImageGallery: FC<ImageGalleryProps> = ({ images, initImageIndex = 0
   }
 
   return (
-    <div className="w-full">
+    <div className="w-full relative max-h-[750px]">
       <div className="rounded-2xl overflow-hidden">
         <img src={images[currentImageIndex].fullImage} alt="" />
       </div>
-      <button onClick={goBackImage}>back</button>
-      <button onClick={goNextImage}>next</button>
+      <Button className="absolute top-0 left-0 h-full opacity-50 hover:opacity-100" onClick={goBackImage}>back</Button>
+      <Button className="absolute bottom-0 right-0 h-full opacity-50 hover:opacity-100" onClick={goNextImage}>next</Button>
     </div>
   )
 }
