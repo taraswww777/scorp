@@ -17,7 +17,7 @@ export interface WithModelUuid {
   modelUUID: string,
 }
 
-const genUrlModelDetail: RouteFn<WithModelUuid> = () => `/models/detail`;
+const genUrlModelDetail: RouteFn<WithModelUuid> = () => `/modelDetail`;
 // const genUrlModelDetail: RouteFn<WithModelUuid> = ({ modelUUID }) => `/models/${modelUUID}`;
 
 export const ROUTES = {

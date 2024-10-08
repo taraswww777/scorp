@@ -8,7 +8,9 @@ import { VARIANT } from 'src/uiKit/constants/VARIANT';
 export const Header: FC = () => {
   return (
     <div className="w-full flex flex-nowrap items-center gap-x-9">
-      <FullLogo />
+      <Link href={ROUTES.home}>
+        <FullLogo />
+      </Link>
       <nav className="grow">
         <ul className="flex flex-nowrap m-0 p-0">
           <li><Link className="p-2" href={ROUTES.home}>Проекты</Link></li>
