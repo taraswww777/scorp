@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { PropsWithChildren } from 'react';
 import { LOCALES, SITE_NAME } from 'src/constants/common';
+import { Inter } from "next/font/google";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -13,6 +14,10 @@ const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
+});
+
+const interFont = Inter({
+  subsets: ["latin", "cyrillic"],
 });
 
 export const metadata: Metadata = {
@@ -31,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang={LOCALES.ruRU}>
     <body
-      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${interFont.className} antialiased`}
     >
     {children}
     </body>
