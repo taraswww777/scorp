@@ -18,12 +18,13 @@ export const Button: FC<PropsWithChildren<ButtonProps>> = ({
   size = SIZE.medium,
   variant = VARIANT.neutral,
   inline = true,
+  className= '',
   ...props
 }) => {
   return (
     <button
       {...props}
-      className={classNames('py-[12px] px-[16px] rounded-md', {
+      className={classNames(className, 'py-[12px] px-[16px] rounded-md transition-all duration-300', {
         'leading-none text-nowrap': inline,
         'bg-neutral': variant === VARIANT.neutral,
         'py-[12px] px-[16px]': size === SIZE.medium,

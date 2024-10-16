@@ -12,7 +12,7 @@ export const PageTemplate: FC<PropsWithChildren<PageTemplateProps>> = ({
 }) => {
   return (
     <div className="w-full bg-background h-screen">
-      <header className="w-full sticky top-0 p-4 bg-background  overflow-hidden">
+      <header className="w-full sticky top-0 p-4 bg-background overflow-hidden z-10">
         <div className="container mx-auto">
           {header}
         </div>
