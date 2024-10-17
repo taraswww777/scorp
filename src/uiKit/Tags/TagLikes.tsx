@@ -1,10 +1,10 @@
-import { FC, PropsWithChildren } from 'react';
-import { Tag, TagProps } from './Tag';
-import { Icons } from 'src/uiKit';
+import { FC, PropsWithChildren } from "react";
+import { Tag, TagProps } from "./Tag";
+import { Icons } from "src/uiKit";
 
 export const TagLikes: FC<PropsWithChildren<TagProps>> = ({
   children,
-  type
+  type,
 }) => {
   return (
     <Tag type={type}>
@@ -12,4 +12,4 @@ export const TagLikes: FC<PropsWithChildren<TagProps>> = ({
       {children}
     </Tag>
   );
-}
+};
