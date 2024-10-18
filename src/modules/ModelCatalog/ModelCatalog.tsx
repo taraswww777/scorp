@@ -18,7 +18,10 @@ export const ModelCatalog: FC = () => {
     <div className="w-full">
       <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-8 items-start">
         {listModels.map((modelItem) => (
-          <li key={modelItem.uuid} className="flex flex-wrap gap-y-2 group">
+          <li
+            key={modelItem.uuid}
+            className="flex flex-wrap gap-y-2 justify-between content-between h-full"
+          >
             <Link href={ROUTES.modelDetail({ modelUUID: modelItem.uuid })}>
               <Image
                 src={modelItem.previewImgUrl}
