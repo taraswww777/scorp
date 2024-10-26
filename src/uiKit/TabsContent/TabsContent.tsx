@@ -1,7 +1,4 @@
-// classnames
 import classNames from "classnames";
-
-// types
 import { ITabsContentProps } from "src/types/Tabs/Tabs";
 
 export const TabsContent = ({ allTabs, openTabId }: ITabsContentProps) => {

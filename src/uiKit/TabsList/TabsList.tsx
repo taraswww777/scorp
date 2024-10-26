@@ -1,7 +1,4 @@
-// classnames
 import classNames from "classnames";
-
-// types
 import { ITabsListProps } from "src/types/Tabs/Tabs";
 
 export const TabsList = ({

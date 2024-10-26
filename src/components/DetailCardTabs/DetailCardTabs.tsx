@@ -1,12 +1,7 @@
 "use client";
 
-// react
 import { useState } from "react";
-
-// ui
 import { TabTitles } from "./DetailCardTabsUi";
-
-// uiKit
 import { TabsList } from "src/uiKit/TabsList/TabsList";
 import { TabsContent } from "src/uiKit/TabsContent/TabsContent";
 
