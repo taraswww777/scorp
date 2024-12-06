@@ -1,11 +1,20 @@
-import { FC } from 'react';
-import { CatalogModelItemDTO } from 'src/types/dto/CatalogModelItemDTO';
-import { UserInline } from 'src/components/UserInline';
-import { Button, Icons, Tag, TagComments, TagFolder, TagLikes, TagTypes } from 'src/uiKit';
-import { ImageGallery } from 'src/components/ImageGallery';
+import { FC } from "react";
+import { CatalogModelItemDTO } from "src/types/dto/CatalogModelItemDTO";
+import { UserInline } from "src/components/UserInline";
+import {
+  Button,
+  Icons,
+  Tag,
+  TagComments,
+  TagFolder,
+  TagLikes,
+  TagTypes,
+} from "src/uiKit";
+import { ImageGallery } from "src/components/ImageGallery";
+import { DetailCardTabs } from "src/components/DetailCardTabs/DetailCardTabs";
 
 interface ModelDetailUIProps {
-  modelDetail: CatalogModelItemDTO
+  modelDetail: CatalogModelItemDTO;
 }
 
 export const ModelDetailUI: FC<ModelDetailUIProps> = ({ modelDetail }) => {
@@ -30,24 +39,20 @@ export const ModelDetailUI: FC<ModelDetailUIProps> = ({ modelDetail }) => {
           <TagComments type={TagTypes.white}>
             {modelDetail.comments.length}
           </TagComments>
-          <TagLikes type={TagTypes.white}>
-            {modelDetail.likes}
-          </TagLikes>
-          <TagFolder type={TagTypes.white}>
-            {modelDetail.folders}
-          </TagFolder>
+          <TagLikes type={TagTypes.white}>{modelDetail.likes}</TagLikes>
+          <TagFolder type={TagTypes.white}>{modelDetail.folders}</TagFolder>
         </div>
         <div className="flex flex-nowrap gap-x-4">
-          <Button className={'font-medium'}>Заказать 3D-печать</Button>
-          <Button
-            className={'font-medium'}
-            icon={<Icons.ArrowDown />}
-          >Скачать</Button>
+          <Button className={"font-medium"}>Заказать 3D-печать</Button>
+          <Button className={"font-medium"} icon={<Icons.ArrowDown />}>
+            Скачать
+          </Button>
         </div>
       </div>
+      <DetailCardTabs />
       <div className="mt-4">
         <pre>{JSON.stringify(modelDetail, undefined, 2)}</pre>
       </div>
     </div>
-  )
-}
+  );
+};
