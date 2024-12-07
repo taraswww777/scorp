@@ -9,6 +9,8 @@ enum ROUTE_NAMES {
   models = 'models',
   /** Модель детально */
   modelDetail = 'modelDetail',
+  /** Создание модели */
+  modelCreate = 'addNewModel',
 }
 
 type RouteFn<TParams = Record<string, string | number>> = (params: TParams) => string;
@@ -25,7 +27,6 @@ export const ROUTES = {
   [ROUTE_NAMES.community]: '/community',
   [ROUTE_NAMES.home]: '/',
   [ROUTE_NAMES.models]: '/models',
-  [ROUTE_NAMES.modelDetail]: genUrlModelDetail
+  [ROUTE_NAMES.modelDetail]: genUrlModelDetail,
+  [ROUTE_NAMES.modelCreate]: '/addNewModel'
 }
-
-

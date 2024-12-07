@@ -1,0 +1,1 @@
+export { AddNewModelModule } from './AddNewModelModule'
