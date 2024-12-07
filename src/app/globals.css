@@ -11,8 +11,10 @@
   --hover: #F5F5F5;
 
   --textColor: #000000;
+  --textDefault: #1E1E1E;
   --textDark: #222222;
   --textSecondary: #757575;
+  --borderDefault: #D9D9D9;
 }
 
 /* TODO: Добавить поддержку тёмной темы*/
