@@ -2,19 +2,22 @@ import { FC, PropsWithChildren } from 'react';
 import { classNames } from 'src/utils/classNames';
 
 interface SecondaryTextProps extends Parameters<HTMLSpanElement> {
-  isSecondary?: boolean;
+  secondary?: boolean;
+  primary?: boolean;
 }
 
-export const SecondaryText: FC<PropsWithChildren<SecondaryTextProps>> = ({
+export const T: FC<PropsWithChildren<SecondaryTextProps>> = ({
   children,
-  isSecondary,
+  secondary,
+  primary,
   ...props
 }) => {
   return (
     <span
       className={classNames(
         'font-normal text-textDefault',
-        isSecondary && 'text-sm'
+        secondary && 'text-sm',
+        primary && 'text-2xl',
       )}
       {...props}
     >
