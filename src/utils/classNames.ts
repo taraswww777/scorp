@@ -1,4 +1,5 @@
+import { union } from 'lodash';
 
 export const classNames = (...args: Array<string | boolean | undefined>) => {
-  return args.filter(v => !!v).join(' ')
+  return union(args.filter(v => !!v).join(' ').split(' ')).join(' ');
 }

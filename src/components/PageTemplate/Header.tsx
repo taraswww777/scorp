@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { FullLogo } from 'src/components/FullLogo';
 import Link from 'next/link';
 import { ROUTES } from 'src/constants/routes';
-import { Button, LinkButton } from 'src/uiKit';
+import { LinkButton } from 'src/uiKit';
 import { VARIANT } from 'src/uiKit/constants/VARIANT';
 
 export const Header: FC = () => {
@@ -22,9 +22,9 @@ export const Header: FC = () => {
         <input placeholder="Поиск" />
       </div>
       <div className="">
-        <Button>
+        <Link href={ROUTES.addNewModel}>
           Создать
-        </Button>
+        </Link>
         <LinkButton variant={VARIANT.subtle}>
           Войти
         </LinkButton>
