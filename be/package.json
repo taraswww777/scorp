@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/server.js",
+    "dev": "tsx --watch ./src/server.ts --noEmit"
+  }
+}

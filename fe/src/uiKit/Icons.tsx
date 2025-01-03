@@ -10,7 +10,7 @@ const ArrowLeft = () => <img src="/assets/icons/ArrowDown.svg" alt="ArrowLeft" c
 /** TODO: ArrowRight нужно доделать поворот */
 const ArrowRight = () => <img src="/assets/icons/ArrowDown.svg" alt="ArrowRight" className="w-5 rotate-45" />
 
-const AttachFile = (props: { className?: Parameters<typeof classNames> }) => (
+const AttachFile = (props: { className?: string }) => (
   <img src="/assets/icons/AttachFileIcon.svg" alt="AttachFileIcon" className='w-5' {...props} />
 );
 

@@ -4,15 +4,21 @@
   "private": true,
   "repository": "https://github.com/taraswww777/scorp",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "be:dev": "cd ./be && npm run dev",
+    "be": "npm run be:build && npm run be:start",
+    "be:build": "cd ./be && npm run build",
+    "be:start": "cd ./be && npm run start",
+    "fe:dev": "cd ./fe && npm run dev",
+    "fe:build": "cd ./fe && npm run build",
+    "fe:start": "cd ./fe && npm run start",
+    "fe:lint": "cd ./fe && npm run lint"
   },
   "dependencies": {
+    "fastify": "5.2.0",
     "next": "14.2.13",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "tsx": "4.19.2"
   },
   "devDependencies": {
     "@faker-js/faker": "9.0.3",
@@ -24,9 +30,11 @@
     "classnames": "2.5.1",
     "eslint": "8.57.1",
     "eslint-config-next": "14.2.13",
+    "fastify-cli": "7.3.0",
     "lodash": "4.17.21",
     "postcss": "8.4.47",
     "tailwindcss": "3.4.13",
+    "ts-node": "10.9.2",
     "typescript": "5.6.2"
   }
 }
