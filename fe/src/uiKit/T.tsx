@@ -1,12 +1,12 @@
 import { FC, PropsWithChildren } from 'react';
 import { classNames } from 'src/utils/classNames';
 
-interface SecondaryTextProps extends Parameters<HTMLSpanElement> {
+interface TextProps {
   secondary?: boolean;
   primary?: boolean;
 }
 
-export const T: FC<PropsWithChildren<SecondaryTextProps>> = ({
+export const T: FC<PropsWithChildren<TextProps>> = ({
   children,
   secondary,
   primary,
