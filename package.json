@@ -4,10 +4,10 @@
   "private": true,
   "repository": "https://github.com/taraswww777/scorp",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "fe:dev": "cd ./fe && npm run dev",
+    "fe:build": "cd ./fe && npm run build",
+    "fe:start": "cd ./fe && npm run start",
+    "fe:lint": "cd ./fe && npm run lint"
   },
   "dependencies": {
     "next": "14.2.13",
