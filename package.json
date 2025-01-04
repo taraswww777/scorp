@@ -4,8 +4,8 @@
   "private": true,
   "repository": "https://github.com/taraswww777/scorp",
   "scripts": {
+    "build": "npm run fe:build && npm run be:build",
     "be:dev": "cd ./be && npm run dev",
-    "be": "npm run be:build && npm run be:start",
     "be:build": "cd ./be && npm run build",
     "be:start": "cd ./be && npm run start",
     "fe:dev": "cd ./fe && npm run dev",
