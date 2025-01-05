@@ -3,6 +3,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node ./dist/server.js",
-    "dev": "tsx --watch ./src/server.ts --noEmit"
+    "dev": "tsx --watch ./src/server.ts --noEmit",
+    "eslint": "eslint",
+    "eslint:fix": "eslint --fix"
   }
 }
