@@ -22,8 +22,7 @@ jobs:
           node-version: '22'
 
       - name: Install NPM dependencies
-        # TODO: #12 https://github.com/taraswww777/scorp/issues/12
-        run: npm ci --force
+        run: npm ci
 
       - name: Deploy
         run: npm run build
