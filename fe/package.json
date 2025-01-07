@@ -1,4 +1,5 @@
 {
+  "name": "scorp-fe",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
