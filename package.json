@@ -6,9 +6,11 @@
   "workspaces": ["be", "fe"],
   "scripts": {
     "build": "npm run fe:build && npm run be:build",
+    "checks": "npm run fe:lint && npm run be:lint",
     "be:dev": "npm -w scorp-be run dev",
     "be:build": "npm -w scorp-be run build",
     "be:start": "npm -w scorp-be run start:tsx",
+    "be:lint": "npm -w scorp-be run lint",
     "fe:dev": "npm -w scorp-fe run dev",
     "fe:build": "npm -w scorp-fe run build",
     "fe:start": "npm -w scorp-fe run start",

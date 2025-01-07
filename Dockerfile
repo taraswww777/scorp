@@ -21,6 +21,7 @@ COPY . .
 # RUN npm run be:build
 RUN npm run fe:build
 
+# TODO: ISSUE-20 - https://github.com/taraswww777/scorp/issues/20
 # Открываем порт, на котором будет работать приложение
 EXPOSE 8080
 

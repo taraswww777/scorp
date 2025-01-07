@@ -21,8 +21,13 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Install NPM dependencies
+      - name: Установка NPM зависимостей (Install NPM dependencies)
         run: npm ci
 
-      - name: Deploy
+      # Сборка и проверка типизаций (Build)
+      - name: Сборка и проверка типизаций (Build)
         run: npm run build
+
+      # Проверки стилей и тестов (Checks)
+      - name: Проверки стилей и тестов (Checks)
+        run: npm run checks
