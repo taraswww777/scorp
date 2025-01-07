@@ -1,10 +1,12 @@
 {
+  "name": "scorp-be",
   "type": "module",
   "scripts": {
     "build": "tsc",
     "start": "node ./dist/server.js",
+    "start:tsx": "tsx ./src/server.ts",
     "dev": "tsx --watch ./src/server.ts --noEmit",
-    "eslint": "eslint",
-    "eslint:fix": "eslint --fix"
+    "lint": "eslint -c ./eslint.config.mjs",
+    "lint:fix": "eslint --fix"
   }
 }

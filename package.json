@@ -3,15 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "repository": "https://github.com/taraswww777/scorp",
+  "workspaces": ["be", "fe"],
   "scripts": {
     "build": "npm run fe:build && npm run be:build",
-    "be:dev": "cd ./be && npm run dev",
-    "be:build": "cd ./be && npm run build",
-    "be:start": "cd ./be && npm run start",
-    "fe:dev": "cd ./fe && npm run dev",
-    "fe:build": "cd ./fe && npm run build",
-    "fe:start": "cd ./fe && npm run start",
-    "fe:lint": "cd ./fe && npm run lint"
+    "checks": "npm run fe:lint && npm run be:lint",
+    "be:dev": "npm -w scorp-be run dev",
+    "be:build": "npm -w scorp-be run build",
+    "be:start": "npm -w scorp-be run start:tsx",
+    "be:lint": "npm -w scorp-be run lint",
+    "fe:dev": "npm -w scorp-fe run dev",
+    "fe:build": "npm -w scorp-fe run build",
+    "fe:start": "npm -w scorp-fe run start",
+    "fe:lint": "npm -w scorp-fe run lint",
+    "docker:start": "docker-compose up",
+    "docker:build": "docker build -t scorp ."
   },
   "dependencies": {
     "fastify": "5.2.0",

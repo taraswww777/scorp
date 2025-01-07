@@ -4,14 +4,17 @@ import tseslint from "typescript-eslint";
 
 
 /** @type {import('eslint').Linter.Config[]} */
-export default [
-  { files: ["./src/**/*.{js,mjs,cjs,ts}"] },
+const eslintConfig = [
   { languageOptions: { globals: globals.browser } },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   {
+    files: ["./src/**/*.{js,mjs,cjs,ts}"],
     rules: {
       "@typescript-eslint/no-unused-vars": 'warn'
-    }
+    },
+    ignores: ['dist']
   }
 ];
+
+export default eslintConfig;
